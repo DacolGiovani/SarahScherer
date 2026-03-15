@@ -1,0 +1,202 @@
+header {
+  background-image: url('fundo-sarah-verde.png'); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10%;
+  color: white;
+  font-family: "Tangerine", cursive;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  word-spacing: -2px;
+  text-shadow: 1.5px 1.5px 3px rgba(0,0,0,0.7);
+}
+
+#header h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: 2.5em;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+#header h4 {
+  margin: 0;
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+#header p {
+  margin: 0;
+  padding: 10px;
+  font-size: 0.6em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+body {
+  background-image: url('fundo-bege.png'); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+
+section {
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  min-height: 50vh;
+  margin: 5%;
+  padding: 5px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+  border-radius: 25px;
+  background-color: antiquewhite;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.content p {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+  text-align: justify;
+}
+
+#About-me {
+  background-color: rgb(249, 239, 226);
+}
+
+#Atendimentos {
+  background-color: #d7e4d9;
+}
+
+#Contact-information {
+  background-color: #f9f9f9;
+}
+
+#contact-content {
+  display: flex;
+  flex-direction: column; /* default: stacked vertically */
+  max-height: 100vh;
+}
+
+#contact-info {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+#map {
+  margin: 25px;
+  aspect-ratio: 16 / 9; /* keeps proportion */
+  max-height: 50vh;     /* matches parent */
+}
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* On larger screens, keep info on top and map below */
+@media (min-width: 1024px) {
+  #contact-content {
+    flex-direction: row; /* content and map side by side */
+  }
+
+  #contact-info {
+    flex: 1;
+  }
+
+  #map {
+    flex: 1;
+  }
+}
+
+
+
+
+/*
+#map {
+  border: 2px solid #25D366;
+  border-color: #25D366;
+  flex: 1;
+  margin: 25px;
+  position: relative;
+  max-height: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+#map iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+*/
+
+.social-float {
+  position: fixed;       /* Keeps container fixed while scrolling */
+  bottom: 20px;          /* Distance from bottom */
+  right: 20px;            /* Distance from left */
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  gap: 15px;             /* Space between icons */
+  z-index: 100;
+}
+
+.social-float a {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.social-float a img {
+  width: 35px;
+  height: 35px;
+}
+
+/* WhatsApp style */
+.social-float .whatsapp {
+  background-color: #25D366;
+}
+
+/* Instagram style */
+.social-float .instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
+}
